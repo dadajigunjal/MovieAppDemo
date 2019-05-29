@@ -108,6 +108,9 @@ public class MainActivity extends AppCompatActivity {
             public void onFailure(Call<GenresResponse> call, Throwable t) {
                 // Log error here since request failed
                 Log.e(TAG, t.toString());
+                //duplicated to test build
+                // Log error here since request failed
+                Log.e(TAG, t.toString());
             }
         });
     }
