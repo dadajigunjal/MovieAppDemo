@@ -51,10 +51,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*if (API_KEY.isEmpty()) {
+        if (API_KEY.isEmpty()) {
             Toast.makeText(getApplicationContext(), "Please obtain your API KEY from themoviedb.org first!", Toast.LENGTH_LONG).show();
             return;
-        }*/
+        }
 
         recyclerView = (RecyclerView) findViewById(R.id.movies_recycler_view);
         recycler_view_geners = (RecyclerView) findViewById(R.id.recycler_view_geners);
