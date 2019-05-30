@@ -11,22 +11,17 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.movieappdemo.MyRecyclerItemClickListener;
 import com.android.movieappdemo.R;
 import com.android.movieappdemo.adapter.GenresAdapter;
 import com.android.movieappdemo.adapter.MoviesAdapter;
-import com.android.movieappdemo.adapter.ShowAdapter;
 import com.android.movieappdemo.model.Genre;
 import com.android.movieappdemo.model.GenresResponse;
 import com.android.movieappdemo.model.Movie;
 import com.android.movieappdemo.model.MoviesResponse;
-import com.android.movieappdemo.model.TvResponse;
-import com.android.movieappdemo.model.TvShows;
 import com.android.movieappdemo.rest.APIClient;
 import com.android.movieappdemo.rest.APIInterface;
 
@@ -56,10 +51,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if (API_KEY.isEmpty()) {
+        /*if (API_KEY.isEmpty()) {
             Toast.makeText(getApplicationContext(), "Please obtain your API KEY from themoviedb.org first!", Toast.LENGTH_LONG).show();
             return;
-        }
+        }*/
 
         recyclerView = (RecyclerView) findViewById(R.id.movies_recycler_view);
         recycler_view_geners = (RecyclerView) findViewById(R.id.recycler_view_geners);
